@@ -7,21 +7,24 @@ from game import Game
 
 class Main:
     def __init__(self) -> None:
-        #通用設定
+        #一般設定
         pygame.init()
         self.Display_Surface = pygame.display.set_mode((Window_Width,Window_Height))
         self.Clock = pygame.time.Clock()
         pygame.display.set_caption("tetris_test")
 
+        self.game = Game()
+
     def run(self):
         while True:
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
+            for Event in pygame.event.get():
+                if Event.type == pygame.QUIT:
                     pygame.quit()
                     exit()
                     #離開遊戲
             #顯示
             self.Display_Surface.fill(Gray)
+            self.game.run()
 
             #遊戲畫面更新
             pygame.display.update()
