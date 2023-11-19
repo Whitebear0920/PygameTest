@@ -10,8 +10,8 @@ Game_Height = Rows*Cell_Size
 
 #側邊欄位大小
 SideBar_Width = 200
-Preview_Height_Farction = 0.7
-Socre_Height_Farction = 1-Preview_Height_Farction
+Preview_Height_Fraction = 0.7
+Score_Height_Fraction = 1-Preview_Height_Fraction
 
 #整體視窗大小
 Padding = 20
