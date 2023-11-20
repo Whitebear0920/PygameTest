@@ -22,7 +22,7 @@ Window_Height = Game_Height+Padding*2
 Update_Start_Speed = 500 #程式每次更新間隔(ms)
 Move_Wait_Time = 100
 Rotate_Wait_Time = 200
-Block_Offset = pygame.Vector2(Columns // 2, -1)
+Block_Offset = pygame.Vector2(Columns // 2, 2)
 
 #顏色
 Yellow = '#f1e60d'
